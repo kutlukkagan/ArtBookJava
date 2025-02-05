@@ -40,10 +40,15 @@ public class ArtActivity extends AppCompatActivity {
     }
 
     public void save(View view){
-
+String name=binding.nameText.getText().toString();
+String artistName=binding.artistText.getText().toString();
+String year=binding.yearText.getText().toString();
 
     }
+public Bitmap makeSmallerImage(Bitmap image){
 
+        return image.createScaledBitmap(image,100,100,true);
+}
 public void selectImage(View view)
 {
     if (Build.VERSION.SDK_INT>=Build.VERSION_CODES.TIRAMISU){
